@@ -1,5 +1,3 @@
 <?php
 
-require('../vendor/autoload.php');
-
-echo 'test server';
+echo 'I\'m alive!';
