@@ -33,23 +33,20 @@
 </head>
 
 <body>
-
-  <?php 
+  <div class="container">
+    <?php 
   include('./auth.php');
   
   if(isset($authUser)){
-?>
+  ?>
 
-  <h1>
-    <?php echo $authUser;?>
+    <h1>Добро пожаловать, <?php echo $authUser;?></h1>
     <a href="./exit.php">Exit</a>
-  </h1>
 
-  <?php
+    <?php
   } else {
   ?>
 
-  <div class="container">
     <form action="./post.php" method="POST">
       <div class="field">
         <label for="username">Your Username</label>
@@ -59,12 +56,11 @@
         <button type="submit">Sign in</button>
       </div>
     </form>
+
+    <?php
+  }
+  ?>
   </div>
-
-  <?php
-}
-?>
-
 </body>
 
 </html>
