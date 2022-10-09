@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
 session_start();
-$uloadFileName = filter_input(INPUT_POST, 'username', FILTER_DEFAULT);
-$_SESSION['authUser'] = $uloadFileName;
+$userName = filter_input(INPUT_POST, 'username', FILTER_DEFAULT);
+$_SESSION['authUser'] = $userName;
 
 // echo $_SESSION['authUser'];
 header('HTTP/1.1 200 OK');

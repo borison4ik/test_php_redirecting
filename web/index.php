@@ -35,31 +35,8 @@
 <body>
   <div class="container">
     <?php 
-  include('./auth.php');
-  
-  if(isset($authUser)){
-  ?>
-
-    <h1>Добро пожаловать, <?php echo $authUser;?></h1>
-    <a href="./exit.php">Exit</a>
-
-    <?php
-  } else {
-  ?>
-
-    <form action="./post.php" method="POST">
-      <div class="field">
-        <label for="username">Your Username</label>
-        <input type="text" id="username" name="username">
-      </div>
-      <div class="field">
-        <button type="submit">Sign in</button>
-      </div>
-    </form>
-
-    <?php
-  }
-  ?>
+      include('./content.php');
+    ?>
   </div>
 </body>
 
