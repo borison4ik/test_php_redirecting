@@ -34,8 +34,8 @@
 
 <body>
   <div class="container">
-    <?php 
-      include('./content.php');
+    <?php
+      include_once('./content.php');
     ?>
   </div>
 </body>

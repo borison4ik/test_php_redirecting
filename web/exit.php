@@ -37,7 +37,7 @@
     <p>
       <?php
         session_start();
-        echo isset($_SESSION['bedPassword']) ? '<h2>Try again!</h2><br/><a href="./index.php">To Home</a> or ' : '';
+        echo isset($_SESSION['badPassword']) ? '<h2>Try again!</h2><br/><a href="./index.php">To Home</a> or ' : '';
       ?>
     </p>
     <form action="./logout.php" method="POST">

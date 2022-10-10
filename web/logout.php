@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 session_start();
-$passvord = '123456789';
+$passvord = $_SESSION['password'] ?? NULL;
 $userPassword = filter_input(INPUT_POST, 'password', FILTER_DEFAULT);
-$_SESSION['bedPassword'] = false;
+$_SESSION['badPassword'] = false;
 
 if($userPassword === $passvord) {
   session_unset();
